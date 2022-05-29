@@ -20,6 +20,16 @@ public:
         root->right_child = nullptr;
     };
 
+    void Free(Node* node) {
+        if (node == nullptr) {
+            return;
+        }
+
+        Free(node->left_child);
+        Free(node->right_child);
+        free(node);
+    }
+    
     void Visit(Node* node) {
         cout << node->data;
     }
