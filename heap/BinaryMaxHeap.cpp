@@ -115,7 +115,7 @@ void Insert(BinaryMaxHeap *binary_max_heap, int x) {
     int i = binary_max_heap->count++;
     
     while(i > 0 && x > binary_max_heap->array[(i - 1) / 2]) {
-        Swap(binary_max_heap->array[i], binary_max_heap->array[(i - 1) / 2]);
+        binary_max_heap->array[i] = binary_max_heap->array[(i - 1) / 2];
         i = (i - 1) / 2;
     }
 
