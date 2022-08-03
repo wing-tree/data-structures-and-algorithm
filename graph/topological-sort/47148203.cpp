@@ -1,3 +1,5 @@
+// https://www.acmicpc.net/problem/1766
+
 #include <cstdio>
 #include <cstring>
 #include <queue>
