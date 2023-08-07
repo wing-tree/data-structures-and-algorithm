@@ -3,7 +3,7 @@
 #include <cstdio>
 
 int main() {
-	int N(0), n(0), m(0);
+    int N(0), n(0), m(0);
     
     scanf("%d", &N);
 
@@ -23,5 +23,5 @@ int main() {
         printf("%d", n + m);
     }
 
-	return 0;
+    return 0;
 }
