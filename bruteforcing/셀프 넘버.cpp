@@ -6,28 +6,29 @@
 std::vector<bool> N(10001, true);
 
 int d(int n) {
-    int digit;
-    int m(n);
+	int digit;
+	int m(n);
 
-    while (n > 0) {
-        digit = n % 10;
-        m += digit;
-        n /= 10;
-    }
+  while (n > 0) {
+    digit = n % 10;
+    m += digit;
+    n /= 10;
+  }
 
-    return m;
+  return m;
 }
 
 int main() {
-    for (int i(1); i < 10001; ++i) {
-        N[d(i)] = false;
-    }
+	for (int i(1); i < 10001; ++i) {
+		N[d(i)] = false;
+	}
 
-    for (int i(1); i < 10001; ++i) {
-        if (N[i]) {
-            printf("%d\n", i);
-        }
-    }
+	for (int i(1); i < 10001; ++i) {
+		if (N[i]) {
+			printf("%d\n", i);
+		}
+	}
 
-    return 0;
+	return 0;
 }
+
