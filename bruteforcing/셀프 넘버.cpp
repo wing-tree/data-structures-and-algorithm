@@ -7,7 +7,7 @@ std::vector<bool> N(10001, true);
 
 int d(int n) {
     int digit;
-	  int m(n);
+    int m(n);
 
     while (n > 0) {
         digit = n % 10;
